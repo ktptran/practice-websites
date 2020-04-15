@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+div {
+  display: block;
+}
+
+#inner-box {
+  background-color: yellow;
+  border: 50px solid black;
+  height: 200px;
+  width: 200px;
+}
+
+#outer-box {
+  background-color: red;
+  height: 300px;
+  padding: 40px;
+  width: 300px;
+}

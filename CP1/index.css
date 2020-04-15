@@ -74,8 +74,8 @@ p {
   line-height: 0px;
 }
 
-
-#column-container {
+/* Home page*/
+#top-container {
   display: flex;
   margin: auto auto;
   width: 70%;
@@ -83,6 +83,20 @@ p {
 
 .column {
   border: solid;
-  margin: 2em;
-  padding: 2em;
+  margin: 1em;
+  padding: 1em;
+}
+
+blockquote {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+}
+#projects {
+  display: flex;
+}
+#projects p {
+  text-align: center;
+  border: 0.1px solid black;
+  font-size: 20px;
 }
