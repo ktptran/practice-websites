@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<!--
+  Name: Kevin Tran
+  Date: April 15th, 2020
+
+  This file is my main page and default for my website
+-->
+<html lang="en">
+<head>
+  <link href="home.css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" corssorigin="anyonmous">
+  <meta charset="UTF-8">
+  <script src="script.js" defer></script>
+  <title>Kevin Tran's Site</title>
+</head>
+<body>
+  <header>
+    <h1 class="logo"><a href="">Ktptran</a></h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+  <main>
+    <div id="welcome">
+      <video class="video-bg" autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+      <div id="text">
+        <h1>Kevin Tran</h1>
+        <ul>
+          <a href="https://www.facebook.com/trankevin66"><li><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="https://www.instagram.com/phusadventures/"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/ktptran/"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/ktptran"><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://discord.gg/rHKN2sF"><i class="fab fa-discord fa-2x"></i></a>
+          <a href="mailto:kevint24@uw.edu"><i class="fas fa-envelope"></i></i></a>
+        </ul>
+        <div id="user-pathway">
+          <section class="column">
+            <a href="#about-me">About Me</a>
+          </section>
+          <section class="column">
+            <a href="#portfolio">Portfolio</a>
+          </section>
+          <section class="column">
+            <a href="#experience">Experience</a>
+          </section>
+        </div>
+      </div>
+    </div>
+    <span id="about-me">
+      <img src="about-me.jpg" alt="Kevin Tran Picture">
+      <div id="about-me-text">
+        <ul class="tabs">
+          <li data-tab-target="#overview" class="active tab">Overview</li>
+          <li data-tab-target="#student" class="tab">Student</li>
+          <li data-tab-target="#developer" class="tab">Developer</li>
+          <li data-tab-target="#reader" class="tab">Reader</li>
+        </ul>
+        <div id="tab-content">
+          <div id="overview" data-tab-content class="active">
+            <h2>Placement header 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur urna a sapien accumsan, a mollis dui bibendum. Cras blandit lacus sit amet aliquet venenatis. Integer luctus, orci a iaculis pretium, ante turpis sagittis turpis, non tincidunt lectus nulla in tellus. Phasellus non eros sed neque elementum rhoncus vel blandit ipsum. Donec blandit enim eu ante iaculis, eu porttitor tortor pretium. Donec felis lorem, suscipit eu rhoncus quis, rutrum nec lectus. Nullam aliquet imperdiet velit malesuada dictum. Praesent vitae odio ante.</p>
+          </div>
+          <div id="student" data-tab-content>
+            <h2>Placement header 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur urna a sapien accumsan, a mollis dui bibendum. Cras blandit lacus sit amet aliquet venenatis. Integer luctus, orci a iaculis pretium, ante turpis sagittis turpis, non tincidunt lectus nulla in tellus. Phasellus non eros sed neque elementum rhoncus vel blandit ipsum. Donec blandit enim eu ante iaculis, eu porttitor tortor pretium. Donec felis lorem, suscipit eu rhoncus quis, rutrum nec lectus. Nullam aliquet imperdiet velit malesuada dictum. Praesent vitae odio ante.</p>
+          </div>
+          <div id="developer" data-tab-content>
+            <h2>Placement header 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur urna a sapien accumsan, a mollis dui bibendum. Cras blandit lacus sit amet aliquet venenatis. Integer luctus, orci a iaculis pretium, ante turpis sagittis turpis, non tincidunt lectus nulla in tellus. Phasellus non eros sed neque elementum rhoncus vel blandit ipsum. Donec blandit enim eu ante iaculis, eu porttitor tortor pretium. Donec felis lorem, suscipit eu rhoncus quis, rutrum nec lectus. Nullam aliquet imperdiet velit malesuada dictum. Praesent vitae odio ante.</p>
+          </div>
+          <div id="reader" data-tab-content>
+            <h2>Placement header 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur urna a sapien accumsan, a mollis dui bibendum. Cras blandit lacus sit amet aliquet venenatis. Integer luctus, orci a iaculis pretium, ante turpis sagittis turpis, non tincidunt lectus nulla in tellus. Phasellus non eros sed neque elementum rhoncus vel blandit ipsum. Donec blandit enim eu ante iaculis, eu porttitor tortor pretium. Donec felis lorem, suscipit eu rhoncus quis, rutrum nec lectus. Nullam aliquet imperdiet velit malesuada dictum. Praesent vitae odio ante.</p>
+          </div>
+        </div>
+      </div>
+    </span>
+    <span id="portfolio">
+      <h1>Portfolio</h1>
+      <div id="project-header">
+        <!--<video class="video-bg" autoplay muted loop>
+          <source src="video.mp4" type="video/mp4">
+        </video>-->
+      </div>
+      <h2>Favorite Projects</h2>
+      <div class="project-showcase">
+        <div class="column">
+          <h3> Test Heading 1 </h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum</p>
+        </div>
+        <div class="column">
+          <h3> Test Heading 1 </h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum</p>
+        </div>
+        <div class="column">
+          <h3> Test Heading 1 </h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum</p>
+        </div>
+      </div>
+      <div id="project-timeline">
+        <ul>
+          <li>
+            <div class="content">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="time">
+              <h4>January 2020</h4>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="time">
+              <h4>January 2020</h4>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="time">
+              <h4>January 2020</h4>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="time">
+              <h4>January 2020</h4>
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h3>Lorem Ipsum</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="time">
+              <h4>January 2020</h4>
+            </div>
+          </li>
+          <div style="clear: both;"></div>
+        </ul>
+      </div>
+      <h2>Current Projects</h2>
+      <div class="project-showcase">
+        <div class="column">
+          <h3> Test Heading 1 </h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum</p>
+        </div>
+        <div class="column">
+          <h3> Test Heading 1 </h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum</p>
+        </div>
+        <div class="column">
+          <h3> Test Heading 1 </h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum</p>
+        </div>
+      </div>
+    </span>
+    <span id="experience">
+      <h1>Experience</h1>
+    </span>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h1>Ktptran</h1>
+        <p>
+          Text will go here outlining the website.
+        </p>
+        <div class="contact">
+          <span><i class="fas fa-phone"></i> &nbsp; 425-350-5432</span>
+
+          <span><i class="fas fa-envelope"></i> &nbsp; kevint24@uw.edu</span>
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/trankevin66"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/phusadventures/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/ktptran/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/ktptran"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-section links">
+        <h2>Site Map</h2>
+          <ul>
+            <a href="#about-me"><li>About Me</li></a>
+            <a href="#portfolio"><li>Portfolio</li></a>
+            <a href="#resume"><li>Resume</li></a>
+          </ul>
+        </br>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2020 Kevin Tran
+    </div>
+  </footer>
+</body>
+</html>

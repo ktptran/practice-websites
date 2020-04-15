@@ -1,0 +1,102 @@
+/*
+  Name: Kevin Tran
+  Date: April 14, 2020
+  This is the index.css page for my resume of web development work.
+  It is used by only my resume page at the moment, but will be incorporated into all html files for a consistent feel.
+*/
+
+
+* {
+  font-family: Cambria;
+  font-size: 14px;
+}
+
+#resume {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#pdf {
+  text-align: center;
+}
+
+main {
+  border: 0.2px solid black;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+  line-height: 14px;
+}
+
+#resume h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  border-bottom: 0.4px solid black;
+  line-height: 15px;
+}
+
+h3::first-line {
+  line-height: 0%;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4 {
+  font-weight: normal;
+  font-style: italic;
+  line-height: 0px;
+  border-bottom: 0px;
+}
+
+ul {
+  border-top: 0px;
+  line-height: 18px;
+}
+
+p {
+  border-top: 0px;
+}
+
+.date {
+  float: right;
+  font-style: italic;
+  font-weight: normal;
+}
+
+#top {
+  text-align: center;
+  line-height: 0px;
+}
+
+/* Home page*/
+#top-container {
+  display: flex;
+  margin: auto auto;
+  width: 70%;
+}
+
+.column {
+  border: solid;
+  margin: 1em;
+  padding: 1em;
+}
+
+blockquote {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+}
+#projects {
+  display: flex;
+}
+#projects p {
+  text-align: center;
+  border: 0.1px solid black;
+  font-size: 20px;
+}
