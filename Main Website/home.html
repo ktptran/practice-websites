@@ -10,24 +10,22 @@
   <link href="home.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" corssorigin="anyonmous">
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, intitial-scale=1.0">
   <script src="script.js" defer></script>
-  <title>Kevin Tran's Site</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Ktptran</title>
+  <link rel="icon" href="site-logo.png">
 </head>
 <body>
   <header>
-    <h1 class="logo"><a href="">Ktptran</a></h1>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav>
-      <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#experience">Experience</a></li>
+      <ul class="menu">
+        <li class="logo"><a href="#welcome"><img src="site-nav-bar-logo.png" alt="Logo"></a></li>
+        <li class="item"><a href="#about-me">About Me</a></li>
+        <li class="item"><a href="#portfolio">Portfolio</a></li>
+        <li class="toggle"><span class="bars"></span></li>
       </ul>
     </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-      <span></span>
-    </label>
   </header>
   <main>
     <div id="welcome">
@@ -35,30 +33,18 @@
         <source src="video.mp4" type="video/mp4">
       </video>
       <div id="text">
-        <h1>Kevin Tran</h1>
+        <img src="profile-pic.jpg" alt="Kevin Tran Profile Picture"></img>
+        <h1>Kevin T. Tran</h1>
         <ul>
           <a href="https://www.facebook.com/trankevin66"><li><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="https://www.instagram.com/phusadventures/"><i class="fab fa-instagram fa-2x"></i></a>
           <a href="https://www.linkedin.com/in/ktptran/"><i class="fab fa-linkedin fa-2x"></i></a>
           <a href="https://github.com/ktptran"><i class="fab fa-github fa-2x"></i></a>
           <a href="https://discord.gg/rHKN2sF"><i class="fab fa-discord fa-2x"></i></a>
-          <a href="mailto:kevint24@uw.edu"><i class="fas fa-envelope"></i></i></a>
+          <a href="mailto:kevint24@uw.edu"><i class="fas fa-envelope fa-2x"></i></i></a>
         </ul>
-        <div id="user-pathway">
-          <section class="column">
-            <a href="#about-me">About Me</a>
-          </section>
-          <section class="column">
-            <a href="#portfolio">Portfolio</a>
-          </section>
-          <section class="column">
-            <a href="#experience">Experience</a>
-          </section>
-        </div>
       </div>
     </div>
     <span id="about-me">
-      <img src="about-me.jpg" alt="Kevin Tran Picture">
       <div id="about-me-text">
         <ul class="tabs">
           <li data-tab-target="#overview" class="active tab">Overview</li>
@@ -85,6 +71,7 @@
           </div>
         </div>
       </div>
+      <img src="about-me.jpg" alt="Kevin Tran Picture">
     </span>
     <span id="portfolio">
       <h1>Portfolio</h1>
@@ -108,6 +95,7 @@
           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum</p>
         </div>
       </div>
+      <h2>Timeline</h2>
       <div id="project-timeline">
         <ul>
           <li>
@@ -174,9 +162,6 @@
         </div>
       </div>
     </span>
-    <span id="experience">
-      <h1>Experience</h1>
-    </span>
   </main>
   <footer>
     <div class="footer-content">
@@ -185,16 +170,12 @@
         <p>
           Text will go here outlining the website.
         </p>
-        <div class="contact">
-          <span><i class="fas fa-phone"></i> &nbsp; 425-350-5432</span>
-
-          <span><i class="fas fa-envelope"></i> &nbsp; kevint24@uw.edu</span>
-        </div>
         <div class="socials">
           <a href="https://www.facebook.com/trankevin66"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/phusadventures/"><i class="fab fa-instagram"></i></a>
           <a href="https://www.linkedin.com/in/ktptran/"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/ktptran"><i class="fab fa-github"></i></a>
+          <a href="https://discord.gg/rHKN2sF"><i class="fab fa-discord"></i></a>
+          <a href="mailto:kevint24@uw.edu"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
       <div class="footer-section links">
@@ -202,13 +183,12 @@
           <ul>
             <a href="#about-me"><li>About Me</li></a>
             <a href="#portfolio"><li>Portfolio</li></a>
-            <a href="#resume"><li>Resume</li></a>
           </ul>
         </br>
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2020 Kevin Tran
+      &copy; 2020 Ktptran.com | Kevin Tran
     </div>
   </footer>
 </body>
