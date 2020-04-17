@@ -304,6 +304,30 @@ html, body {
   padding-bottom: 0px;
 }
 
+#portfolio .project-showcase .column img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 35%;
+  padding: 5px;
+}
+
+#portfolio .project-showcase .column a {
+  color: black;
+}
+
+#portfolio .project-showcase .column h3 {
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+}
+
+#portfolio .project-showcase .column h3 {
+  font-size: 16px;
+}
+
 @media (min-width: 880px) {
   #portfolio .project-showcase {
     display: flex;
@@ -311,8 +335,6 @@ html, body {
     margin-right: 5%;
   }
 }
-
-
 
 #portfolio .project-showcase .column h2 {
   text-align: center;
@@ -336,8 +358,6 @@ html, body {
     background: #c5c5c5;
 }
 
-
-
 #project-timeline ul {
   margin: 0;
   padding: 0;
@@ -354,12 +374,23 @@ html, body {
 
 #project-timeline li:nth-child(odd) {
   float: left;
-  text-align: right;
   clear: both;
 }
 
 #project-timeline .content {
   padding-bottom: 20px;
+  background: #fff;
+  border-radius: 0.3em;
+  padding: 1.25em;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),
+    0 1px 1px 0 rgba(0,0,0,.14),
+    0 2px 1px -1px rgba(0,0,0,.12);
+  border: 1px solid black;
+}
+
+#project-timeline .content i {
+  color: black;
+  padding-right: 10px;
 }
 
 #project-timeline li:nth-child(odd):before {
@@ -506,6 +537,10 @@ footer .footer-content .footer-section {
 footer .footer-content h1, footer .footer-content h2 {
   font-family: 'Satisfy', cursive;
   color: white;
+}
+
+footer .footer-content .about p {
+  margin-right: 30%;
 }
 
 footer .footer-content .about .socials a {
