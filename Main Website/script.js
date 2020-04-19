@@ -32,7 +32,7 @@ $(function() {
 // For making the anchor go a little bit above the desired output
 function offsetAnchor() {
   if (location.hash.length !== 0) {
-    window.scrollTo(window.scrollX, window.scrollY - 100);
+    window.scrollTo(window.scrollX, window.scrollY - 75);
   }
 }
 

@@ -11,7 +11,7 @@
 header {
   background: var(--background);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -153,8 +153,8 @@ html, body {
   text-align: center;
   color: white;
   background-image: linear-gradient(90deg,
-    rgba(255, 0, 0, 0.6),
-    rgba(0, 0, 255, 0.6));
+    rgba(255, 0, 0, 0.45),
+    rgba(0, 0, 255, 0.45));
   position: relative;
   overflow: hidden;
   min-height: 100vh;
@@ -203,8 +203,12 @@ html, body {
   color: white;
   margin-left: 2%;
   margin-right: 2%;
-
   margin-bottom: 15px;
+}
+
+#welcome #text i:hover {
+  background-color: #AAA;
+  transition: all .4s;
 }
 
 /* About Me */
@@ -232,11 +236,11 @@ html, body {
 
 #about-me img {
   vertical-align: center;
-  padding: 0;
-  margin: 0;
   width: 100%;
   max-height: 700px;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
 #about-me-text {
@@ -254,6 +258,7 @@ html, body {
 }
 
 #about-me-text #tab-content {
+  display: flex;
   padding: 0;
   margin: 0;
   margin-left: 30px;
@@ -278,51 +283,103 @@ html, body {
   margin: 0;
   padding: 0;
   border-bottom: 1px solid black;
+  background: white;
+
 }
 
 #about-me-text .tabs .tab {
   cursor: pointer;
-  padding: 7.5px;
+  padding: 5px;
   text-transform: uppercase;
+  flex: 1;
+  font-style:italic;
+  font-size: 18px;
+  text-align: center;
+}
+
+#about-me-text .tabs .tab:nth-child(even) {
+  border-left: 0.1px solid black;
+  border-right: 0.1px solid black;
 }
 
 #about-me-text .tabs .tab:hover {
   background-color: #AAA;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  transition: all .4s;
 }
 
 #about-me-text .tab.active {
   background-color: #CCC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* Projects */
-#portfolio h1 {
-  margin-top: 0;
+.portfolio-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: black;
-  font-size: 3.75em;
-  border-top: 1px solid black;
+  color: white;
+  font-size: 3.5em;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.45),
+    rgba(0,0,255,0.45)
+  );
+  margin: 0;
+  padding: 0;
 }
 
-#portfolio h2 {
+.portfolio-intro .video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#portfolio-intro h1 {
   text-align: center;
-  font-size: 40px;
-  padding: 0px;
-  margin: 0px;
-  background-clip:
+  width: 80%;
+  margin: 0;
+  padding: 0;
 }
 
 
 /* Desktop view*/
 #portfolio .project-showcase .column {
   margin: 1em;
-  border: 0.5px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 5%;
+  flex: 1;
+  border-radius: 0.5em;
 }
 
-#portfolio .project-showcase .column h2 {
+#portfolio .project-showcase .column:nth-child(2) {
+  background: #99ebff;
+}
+
+#portfolio .project-showcase .column:nth-child(1) {
+  background: #ffff99;
+}
+
+#portfolio .project-showcase .column:nth-child(3) {
+  background: #99ffbb;
+}
+
+#portfolio h2 {
   text-align: center;
+  border-bottom: 100px;
+  font-size: 45px;
+  margin: 0;
+  padding-top: 25px;
 }
 
 #portfolio .project-showcase .column img {
@@ -330,11 +387,11 @@ html, body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-  height: 30%;
+  width: 50%;
+  height: 40%;
   padding: 5px;
-  max-height: 100px;
-  max-width: 100px;
+  max-height: 130px;
+  max-width: 130px;
   padding-top: 15px;
 }
 
@@ -378,6 +435,8 @@ html, body {
   padding: 40px 0;
   box-sizing: border-box;
   width: 1000px;
+  padding-top: 0;
+  margin-top: 15px;
 }
 
 #project-timeline:before {
@@ -385,7 +444,7 @@ html, body {
     position: absolute;
     left: 50%;
     width: 2px;
-    height: 95%;
+    height: 101%;
     background: #c5c5c5;
 }
 
@@ -411,12 +470,9 @@ html, body {
 #project-timeline .content {
   padding-bottom: 20px;
   background: #fff;
-  border-radius: 0.3em;
+  border-radius: 0.5em;
   padding: 1.25em;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),
-    0 1px 1px 0 rgba(0,0,0,.14),
-    0 2px 1px -1px rgba(0,0,0,.12);
-  border: 1px solid black;
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #project-timeline .content i {
