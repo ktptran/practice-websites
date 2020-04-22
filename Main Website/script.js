@@ -1,5 +1,13 @@
+/*
+  Name: Kevin Tran
+  Date: April 15th, 2020
+
+  This script.js is for my website focused on giving functionality to the html encoded in
+  home.html and css encoded in home.css.
+*/
+// 1. Scrolling function for navbar
 $(document).ready(function() {
-  var scrollLink = $('.scroll');
+  let scrollLink = $('.scroll');
 
   // Smooth scrolling
   scrollLink.click(function(event) {
@@ -10,18 +18,20 @@ $(document).ready(function() {
   })
 });
 
-// About-me section
-const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
+// 2. About me section
+// About-me section constants
+const TABS = document.querySelectorAll('[data-tab-target]')
+const TAB_CONTENTS = document.querySelectorAll('[data-tab-content]')
 
-tabs.forEach(tab => {
+// About me section TABS
+TABS.forEach(tab => {
   tab.addEventListener('click', () => {
     const target = document.querySelector(tab.dataset.tabTarget)
-    tabContents.forEach(tabContent => {
+    TAB_CONTENTS.forEach(tabContent => {
       tabContent.classList.remove('active')
     })
     target.classList.add('active')
-    tabs.forEach(tab => {
+    TABS.forEach(tab => {
       tab.classList.remove('active')
     })
     tab.classList.add('active')
@@ -29,15 +39,13 @@ tabs.forEach(tab => {
   })
 });
 
-// Fade in and out
-const faders = document.querySelectorAll('.fade-in');
-const sliders =document.querySelectorAll(".slide-in");
-
-const appearOptions = {
+// 3. Fading in and out effects
+const FADERS = document.querySelectorAll('.fade-in');
+const SLIDERS =document.querySelectorAll(".slide-in");
+const APPEAR_OPTIONS = {
   threshold: 0,
   rootMargin: "0px 0px -100px 0px"
 };
-
 const appearOnScroll = new IntersectionObserver
 (function(
   entries,
@@ -52,39 +60,12 @@ const appearOnScroll = new IntersectionObserver
     }
   })
 },
-appearOptions);
+APPEAR_OPTIONS);
 
-faders.forEach(fader => {
+FADERS.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
-sliders.forEach(slider => {
+SLIDERS.forEach(slider => {
   appearOnScroll.observe(slider)
 });
-
-// Navigation bar
-$(function() {
-  $(".toggle").on("click", function() {
-    if($(".item").hasClass("active")) {
-      $(".item").removeClass("active");
-    }
-    else {
-      $(".item").addClass("active");
-    }
-  })
-});
-
-// For making the anchor go a little bit above the desired output
-function offsetAnchor() {
-  if (location.hash.length !== 0) {
-    window.scrollTo(window.scrollX, window.scrollY - 75);
-  }
-}
-
-$(document).on('click', 'a[href^="#"]', function(event) {
-  window.setTimeout(function() {
-    offsetAnchor();
-  }, 0);
-});
-
-window.setTimeout(offsetAnchor, 0);

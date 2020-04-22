@@ -1,13 +1,39 @@
+/*
+  Name: Kevin Tran
+  Date: April 15th, 2020
 
-:root {
+  This is the home.css page to style the home.html page for my website.
+*/
+
+/*
+  Table of Contents:
+  1. Whole HTML page
+  2. Navigation bar
+  3. Welcome
+  4. About Me
+  5. Project introduction
+  6. Project Showcase
+  7. Project timeline
+  8. Footer
+
+*/
+
+/* 1. Whole HTML page */
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  box-sizing: border-box;
   --background: rgba(34, 90, 150, 0.85);
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-/* Navbar */
+/* 2. Navigation bar */
 header {
   background: var(--background);
   position: fixed;
@@ -20,11 +46,11 @@ header {
 nav .menu {
   list-style-type: none;
   padding: 0;
-}
-
-a {
-  color: white;
-  text-decoration: none;
+  /* Mobile menu */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu li {
@@ -43,20 +69,9 @@ a {
   height: 40px;
 }
 
-.button.secondary {
-  border-bottom: 1px #444 solid;
-}
-
-/* Mobile menu */
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .toggle {
   order: 1;
+  cursor: pointer;
 }
 
 .item {
@@ -70,10 +85,6 @@ a {
 .item.active {
   display: block;
   padding: 20px 0px;
-}
-
-.toggle {
-  cursor: pointer;
 }
 
 .bars {
@@ -100,7 +111,7 @@ a {
 .bars::after {
   top: -5px;
 }
-/*Desktop View */
+
 @media all and (min-width: 880px) {
   .menu {
     justify-content: center;
@@ -137,14 +148,7 @@ a {
   }
 }
 
-/* Html/body */
-html, body {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-}
-
+/* 3. Welcome */
 #welcome {
   font-family: Cambria;
   text-align: center;
@@ -208,8 +212,8 @@ html, body {
   transition: all .4s;
 }
 
-/* About Me Section */
-/* Desktop Version */
+/* 4. About Me */
+/* 4a. Desktop Version */
 @media (min-width: 700px) {
   #welcome #text i {
     margin-left: 1.5%;
@@ -246,7 +250,7 @@ html, body {
   }
 }
 
-/* Mobile Version */
+/* 4b. Mobile Version */
 #about-me {
   width: 100%;
   min-height: 400px;
@@ -260,20 +264,19 @@ html, body {
   margin: 0;
 }
 
-#about-me img {
+#about-me .about-me-image img {
   width: 100%;
   max-height: 700px;
   display: block;
   object-fit: cover;
 }
 
-/* Format for tab content */
 #about-me #about-me-text #tab-content {
   padding: 40px;
   padding-bottom: 10px;
 }
 
-#about-me-text #tab-content h2 {
+#about-me #about-me-text #tab-content h2 {
   text-align: left;
   font-size: calc(15px + 0.8vw);
   text-transform: uppercase;
@@ -281,7 +284,7 @@ html, body {
   margin: 0;
 }
 
-#about-me-text #tab-content h3 {
+#about-me #about-me-text #tab-content h3 {
   font-size: calc(10px + 0.85vw);
   margin: 0;
   padding: 0;
@@ -289,7 +292,7 @@ html, body {
   margin-bottom: 1vw;
 }
 
-#about-me-text p {
+#about-me #about-me-text p {
   font-size: calc(11px + 0.6vw);
   margin: 0;
   padding: 0;
@@ -297,8 +300,6 @@ html, body {
   margin-bottom: 12px;
 }
 
-
-/* Choosing which slide */
 #about-me-text [data-tab-content] {
   display: none;
 }
@@ -316,17 +317,16 @@ html, body {
   padding: 0;
   border-bottom: 1px solid black;
   background: white;
-  grid-column: 1 / 3;
 }
 
 #about-me-text .tabs .tab {
   cursor: pointer;
-  padding: 5px;
   text-transform: uppercase;
   flex: 1;
   font-style:italic;
   font-size: calc(10px + 0.5vw);
   text-align: center;
+  padding: 5px;
   padding: 1px solid black;
 }
 
@@ -346,7 +346,7 @@ html, body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* Projects */
+/* 5. Project Introduction */
 #portfolio .portfolio-intro {
   display: flex;
   justify-content: center;
@@ -376,7 +376,15 @@ html, body {
   z-index: -1;
 }
 
-/* Desktop view*/
+/* 6. Project Showcase */
+#portfolio h2 {
+  text-align: center;
+  border-bottom: 100px;
+  font-size: calc(38px + 1.25vw);
+  margin: 0;
+  padding-top: 25px;
+}
+
 #portfolio .project-showcase .column {
   margin: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -385,15 +393,14 @@ html, body {
   padding-bottom: 5%;
   flex: 1;
   border-radius: 0.5em;
-
-}
-
-#portfolio .project-showcase .column:nth-child(2) {
-  background: #99ebff;
 }
 
 #portfolio .project-showcase .column:nth-child(1) {
   background: #ffff99;
+}
+
+#portfolio .project-showcase .column:nth-child(2) {
+  background: #99ebff;
 }
 
 #portfolio .project-showcase .column:nth-child(3) {
@@ -404,14 +411,6 @@ html, body {
   position: absolute;
   bottom: 0;
   left: 10px;
-}
-
-#portfolio h2 {
-  text-align: center;
-  border-bottom: 100px;
-  font-size: calc(38px + 1.25vw);
-  margin: 0;
-  padding-top: 25px;
 }
 
 #portfolio .project-showcase .column img {
@@ -470,9 +469,7 @@ html, body {
   }
 }
 
-
-
-/* Projects timeline */
+/* 7. Project timeline */
 #project-timeline  {
   position: relative;
   margin: 1% auto;
@@ -505,6 +502,20 @@ html, body {
   box-sizing: border-box;
 }
 
+#project-timeline h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: calc(18px + 0.4vw);
+  color: rgba(233, 33, 99, 1);
+}
+
+#project-timeline p {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: calc(14px + 0.3vw);
+}
+
 #project-timeline li:nth-child(odd) {
   float: left;
   clear: both;
@@ -518,7 +529,7 @@ html, body {
   box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#project-timeline .content a {
+#project-timeline .content a, #tab-content a {
   color: #037daf;
   text-decoration: none;
 }
@@ -528,31 +539,11 @@ html, body {
   padding-right: 10px;
 }
 
-/*#project-timeline li:nth-child(odd):before {
-  content: '';
-  position: absolute;
-  top: 24px;
-  right: -6px;
-  width: 10px;
-  height: 10px;
-  background: rgba(233, 33, 99, 1);
-  border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+#project-timeline li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
 }
-
-
-
-#project-timeline li:nth-child(even):after {
-  content: '';
-  position: absolute;
-  top: 24px;
-  left: -4px;
-  width: 10px;
-  height: 10px;
-  background: rgba(233, 33, 99, 1);
-  border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
-}*/
 
 #project-timeline li:nth-child(even) .time {
   position: absolute;
@@ -563,27 +554,6 @@ html, body {
   background: rgba(233, 33, 99, 1);
   color: #fff;
   border-radius: 18px;
-}
-
-
-#project-timeline li:nth-child(even) {
-  float: right;
-  text-align: left;
-  clear: both;
-}
-
-#project-timeline h3 {
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  font-size: calc(18px + 0.4vw);
-  color: rgba(233, 33, 99, 1);
-}
-
-#project-timeline p {
-  margin: 10px 0 0;
-  padding: 0;
-  font-size: calc(14px + 0.3vw);
 }
 
 #project-timeline li .time h4 {
@@ -603,7 +573,7 @@ html, body {
   border-radius: 18px;
 }
 
-#project-timeline li .pic {
+#project-timeline .pic {
   margin: 0;
   padding: 0;
 }
@@ -670,20 +640,16 @@ html, body {
 }
 
 @media (max-width: 880px) {
+  #project-timeline:before {
+    left: 20px;
+  }
+
   #project-timeline h3 {
     font-size: calc(13px + 1.25vw);
   }
 
   #project-timeline p {
     font-size: calc(12px + 1vw);
-  }
-
-  #project-timeline {
-    width: 100%;
-  }
-
-  #project-timeline:before {
-    left: 20px;
   }
 
   #project-timeline .content {
@@ -695,16 +661,6 @@ html, body {
     text-align: left;
     padding-left: 50px;
     padding-bottom: 50px;
-  }
-
-  #project-timeline li:nth-child(odd):before, #project-timeline li:nth-child(even):before {
-    top: -18px;
-    left: 16px;
-  }
-
-  #project-timeline li:nth-child(odd):after, #project-timeline li:nth-child(even):after {
-    top: -20px;
-    left: 16px;
   }
 
   #project-timeline li:nth-child(odd) .time, #project-timeline li:nth-child(even) .time {
@@ -719,7 +675,7 @@ html, body {
   }
 }
 
-/* Footer */
+/* 8. Footer */
 @media (max-width: 1100px) {
   footer .footer-content {
     flex-direction: column;
@@ -756,7 +712,7 @@ footer .footer-content .about .socials a {
   border: 1px solid white;
   width: 45px;
   height: 38px;
-  padding-top: 5px;
+  padding-top: 10px;
   margin-right: 5px;
   text-align: center;
   display: inline-block;
@@ -766,7 +722,7 @@ footer .footer-content .about .socials a {
 }
 
 footer .footer-content .about .socials a:hover {
-  color: white;
+  color: gray;
   transition: all .3s;
 }
 
