@@ -272,16 +272,70 @@ nav .menu {
 }
 
 #about-me #about-me-text #tab-content {
-  padding: 40px;
-  padding-bottom: 10px;
+  padding: 0;
+  margin: 3%;
+  height: 90%;
 }
 
 #about-me #about-me-text #tab-content h2 {
-  text-align: left;
-  font-size: calc(15px + 0.8vw);
+  text-align: center;
+  font-size: calc(20px + 0.8vw);
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+}
+
+#overview .top {
+  margin: 0;
+  padding: 0;
+}
+
+.top ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top ul li {
+  flex: 1;
+  text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.top li p {
+  font-size: calc(10px + 0.5vw);
+  margin-top: 0px;
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.top i {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background: rgba(233, 33, 99, 1);
+  justify-content: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+blockquote {
+  font-size: calc(10px + 0.9vw);
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-top: 0.2px solid black;
+  border-bottom: 0.2px solid black;
 }
 
 #about-me #about-me-text #tab-content h3 {
@@ -289,15 +343,15 @@ nav .menu {
   margin: 0;
   padding: 0;
   padding-top: 1vw;
-  margin-bottom: 1vw;
+  margin-bottom: 0.25vw;
 }
 
-#about-me #about-me-text p {
-  font-size: calc(11px + 0.6vw);
+#about-me #about-me-text .bottom p {
+  font-size: calc(18px + 0.4vw);
   margin: 0;
-  padding: 0;
-  padding-bottom: 5px;
+  padding: 8px;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 #about-me-text [data-tab-content] {
