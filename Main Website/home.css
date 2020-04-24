@@ -225,24 +225,24 @@ nav .menu {
       flex-direction: row;
       padding: 0;
       margin: 0;
-      height: 600px;
+      height: 650px;
       justify-content: flex-start;
   }
 
   #about-me #about-me-text {
-    width: 65%;
+    width: 60%;
     height: 600px;
   }
 
   #about-me .about-me-image {
-    height: 600px;
-    width: 35%;
+    height: 650px;
+    width: 40%;
     margin: 0;
     padding: 0;
   }
 
   #about-me .about-me-image img {
-    height: 600px;
+    height: 650px;
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -288,6 +288,7 @@ nav .menu {
 #overview .top {
   margin: 0;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .top ul {
@@ -295,6 +296,7 @@ nav .menu {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 }
 
 .top ul li {
@@ -319,7 +321,8 @@ nav .menu {
   border-radius: 50%;
   display: flex;
   align-items: center;
-  background: rgba(233, 33, 99, 1);
+  background: rgba(215, 33, 99, 0.6);
+  opacity: 60%;
   justify-content: center;
   color: white;
   margin-left: auto;
@@ -329,11 +332,11 @@ nav .menu {
 }
 
 blockquote {
-  font-size: calc(10px + 0.9vw);
+  font-size: calc(9px + 0.9vw);
   font-style: italic;
   text-align: center;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   border-top: 0.2px solid black;
   border-bottom: 0.2px solid black;
 }
@@ -417,7 +420,9 @@ blockquote {
     rgba(0,0,255,0.45)
   );
   margin: 0;
-  padding: 0;
+  padding-top: 42.5px;
+  padding-bottom: 42.5px;
+
 }
 
 .portfolio-intro .video-bg {
@@ -436,7 +441,8 @@ blockquote {
   border-bottom: 100px;
   font-size: calc(38px + 1.25vw);
   margin: 0;
-  padding-top: 25px;
+  padding-top: 30px;
+  padding-bottom: 5px;
 }
 
 #portfolio .project-showcase .column {
@@ -450,15 +456,15 @@ blockquote {
 }
 
 #portfolio .project-showcase .column:nth-child(1) {
-  background: #ffff99;
+  background: #FFFFE0;
 }
 
 #portfolio .project-showcase .column:nth-child(2) {
-  background: #99ebff;
+  background: #F0F8FF;
 }
 
 #portfolio .project-showcase .column:nth-child(3) {
-  background: #99ffbb;
+  background: #e3fbe3;
 }
 
 #portfolio .project-showcase .column .link-info {
@@ -486,7 +492,9 @@ blockquote {
 
 #portfolio .project-showcase .column p {
   font-size: calc(12px + 0.4vw);
-  padding: 5px;
+  padding: 10px;
+  padding-left: calc(0.5vw + 2px);
+  padding-right: calc(0.5vw + 2px);
 }
 
 #portfolio .project-showcase .column h3 {
@@ -520,6 +528,8 @@ blockquote {
 
   #portfolio .project-showcase .column p {
     font-size: calc(6px + 2.5vw);
+    padding-left: calc(0.5vw + 5px);
+    padding-right: calc(0.5vw + 5px);
   }
 }
 
@@ -530,7 +540,7 @@ blockquote {
   padding: 40px 0;
   box-sizing: border-box;
   width: 1000px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 #project-timeline:before {
@@ -755,11 +765,15 @@ footer .footer-content .footer-section {
 
 footer .footer-content h1, footer .footer-content h2 {
   font-family: 'Satisfy', cursive;
-  color: white;
+  color: #6EBFC2;
 }
 
 footer .footer-content .about p {
   margin-right: 30%;
+}
+
+footer .footer-content .about p a {
+  color: #adebeb;
 }
 
 footer .footer-content .about .socials a {
@@ -776,7 +790,7 @@ footer .footer-content .about .socials a {
 }
 
 footer .footer-content .about .socials a:hover {
-  color: gray;
+  color: #adebeb;
   transition: all .3s;
 }
 
@@ -789,7 +803,7 @@ footer .footer-content .links ul a {
 }
 
 footer .footer-content .links ul a:hover {
-  color: #C4D3F7;
+  color: #adebeb;
   margin-left: 15px;
   transition: all .3s;
 }
