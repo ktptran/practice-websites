@@ -447,7 +447,7 @@ blockquote {
 
 #portfolio .project-showcase .column {
   margin: 1em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 5%;
@@ -493,8 +493,6 @@ blockquote {
 #portfolio .project-showcase .column p {
   font-size: calc(12px + 0.4vw);
   padding: 10px;
-  padding-left: calc(0.5vw + 2px);
-  padding-right: calc(0.5vw + 2px);
 }
 
 #portfolio .project-showcase .column h3 {
@@ -505,19 +503,25 @@ blockquote {
   padding-top: 30px;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   #portfolio .project-showcase {
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
     min-height: calc(400px + 10vw);
   }
+
+  #portfolio .project-swhocase .column p {
+    padding-left: calc(0.5vw + 2px);
+    padding-right: calc(0.5vw + 2px);
+  }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   #portfolio .project-showcase .column {
-    min-height: calc(320px + 30vw);
+    min-height: calc(330px + 20vw);
   }
+
   .portfolio-intro {
     margin: -4px;
   }
@@ -528,8 +532,8 @@ blockquote {
 
   #portfolio .project-showcase .column p {
     font-size: calc(6px + 2.5vw);
-    padding-left: calc(0.5vw + 5px);
-    padding-right: calc(0.5vw + 5px);
+    padding-left: calc(1vw + 25px);
+    padding-right: calc(1vw + 25px);
   }
 }
 
