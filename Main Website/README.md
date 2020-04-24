@@ -6,6 +6,8 @@ This website is hosted on Amazon Web Services and uses the following services to
 2. Amazon Route 53 for DNS routing
 3. Amazon S3 to host static websites
 
+![Website Hosting Diagram](https://github.com/ktptran/websites/blob/master/Main%20Website/Hosting%20Website.png?raw=true)
+
 ## Documents
 Within here, you will find the following documents that create the home page.
 1. home.html
