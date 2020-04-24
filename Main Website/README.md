@@ -2,9 +2,10 @@
 
 ## Web Hosting
 This website is hosted on Amazon Web Services and uses the following services to reach you through https://ktptran.com/
-1. Amazon CloudFront for content distribution
-2. Amazon Route 53 for DNS routing
-3. Amazon S3 to host static websites
+1. Amazon Route 53 for DNS routing
+2. Amazon CloudFront for content distribution and caching
+3. AWS Certificate Manager for TLS/SSL security
+4. Amazon S3 to host static websites
 
 ![Website Hosting Diagram](https://github.com/ktptran/websites/blob/master/Main%20Website/Hosting%20Website.png?raw=true)
 
