@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect} from 'react';
 import './style.css';
 import Card from '../UI/Card';
 import blogPost from '../../data/blog.json';
@@ -9,10 +9,12 @@ import blogPost from '../../data/blog.json';
  **/
 
  const BlogPost = (props) => {
+
    const [post, setPost] = useState({});
-   // https://youtu.be/JE8w1gvn0Y4?t=5099
+
    useEffect(() => {
      const postId = props.match.params.postId;
+     console.log(postId);
      const post = blogPost.data.find(post => post.id == postId);
      setPost(post);
    });
@@ -22,7 +24,7 @@ import blogPost from '../../data/blog.json';
       <Card>
         <div className="blogHeader">
           <span className="blogCategory">Featured Post</span>
-          <h1 className="postTitle">Hello</h1>
+          <h1 className="postTitle">{post.postid}</h1>
           <span className="postedBy">posted on July 21, 2016 by Kevin Tran</span>
         </div>
 
