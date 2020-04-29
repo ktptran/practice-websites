@@ -5,7 +5,8 @@ import Navbar from './Components/navbar';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './Components/home';
 import Contact from './Components/Contact';
-import About from './Components/About'
+import About from './Components/About';
+import Post from './Components/post';
 
 class App extends Component {
   state = {
@@ -41,6 +42,7 @@ class App extends Component {
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
+          <Route path="/:post_id" component={Post}/>
         </div>
       </BrowserRouter>
 

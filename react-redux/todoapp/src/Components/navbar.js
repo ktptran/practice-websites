@@ -4,9 +4,9 @@ import { Link, NavLink, withRouter } from 'react-router-dom';
 // withRouter supercharges the component to have react-router-dom properties
 // NavLink for active or not
 const Navbar = (props) => {
-  setTimeout(() => {
+  /*setTimeout(() => {
     props.history.push('/about')
-  }, 2000);
+  }, 2000);*/
   return (
     <nav className="nav-wrappeer red darken-3">
       <div className="container">

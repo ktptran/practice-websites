@@ -39,6 +39,26 @@ TABS.forEach(tab => {
   })
 });
 
+// Projects section
+const TABS_PROJECT = document.querySelectorAll('[data-tab-target-project]')
+const TAB_CONTENTS_PROJECT = document.querySelectorAll('[data-tab-project]')
+
+// About me section TABS
+TABS_PROJECT.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTargetProject);
+    TAB_CONTENTS_PROJECT.forEach(tabContentProject => {
+      tabContentProject.classList.remove('active')
+    })
+    target.classList.add('active')
+    TABS_PROJECT.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+});
+
 // 3. Fading in and out effects
 const FADERS = document.querySelectorAll('.fade-in');
 const SLIDERS =document.querySelectorAll(".slide-in");

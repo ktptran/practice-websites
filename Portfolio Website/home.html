@@ -11,6 +11,7 @@
 <head>
   <link href="home.css" rel="stylesheet"/>
   <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anyonmous">
   <meta charset="UTF-8" name="viewport" content="width=device-width", intitial-scale="1.0">
   <script src="script.js" defer></script>
@@ -46,9 +47,10 @@
   </header>
   <main>
     <div id="welcome">
-      <video class="video-bg" playsinline autoplay muted loop>
+      <img class="video-bg" src="coding.png" alt="Coding">
+      <!--<video class="video-bg" playsinline autoplay muted loop>
         <source src="video.mp4" type="video/mp4">
-      </video>
+      </video>-->
       <div id="text">
         <img src="pic/profile-pic.jpg" alt="Kevin Tran Profile Picture">
         <h1>Kevin T. Tran</h1>
@@ -138,14 +140,14 @@
                   <h3>Books</h3>
                   <p>Bibliophile</p>
                 </li>
+              </ul>
             </div>
             <div class="bottom">
               <p>
-                I am a student who always seeks new opportunities to learn about
-                different fields. My goal is to experience new
-                perspectives and learn more knowledge to build the foundations of building
-                a healthcare business. Through this and other creations, I hope to impact others
-                all around the world.
+                I am a student who always seeks new opportunities to learn new skills and
+                perspectives. Learning has continually taught me how different pieces of our
+                world interact together. Through these teachings, I hope to create tools
+                and tutorials to share my wisdom with others.
               </p>
             </div>
           </div>
@@ -170,14 +172,15 @@
                 <li>
                   <i class="fab fa-medapps fa-2x"></i>
                   <h3>Software Suites</h3>
-                  <p>SQL, R-project, Office 365 &amp; MATLAB</p>
+                  <p>SQL, R-studio &amp; MATLAB</p>
                 </li>
+              </ul>
             </div>
             <div class="bottom">
               <p>
                 I am a motivated developer focused on learning skills to develop highly available
                 software. My specialties are in creating data analysis programs and building
-                insight to business questions. I am currently seeking internship opportunities for
+                insight for business questions. I am currently seeking internship opportunities for
                 software development, product management, and business intelligence.
               </p>
             </div>
@@ -205,92 +208,150 @@
                   <h3>Blogger</h3>
                   <p>Shares insights</p>
                 </li>
+              </ul>
             </div>
             <div class="bottom">
               <p>
-                I am an avid explorer who illustrates different morals I have experienced for
-                others to develop new insights. Previously, I composed travel
-                <a href="http://phusadventures.com/">blogs</a> about different adventures and
-                shared multiple <a href="https://docs.google.com/spreadsheets/d/1t0oJ6ci7sN1B4Kz9nXuxTgzGZ7ItdrDBR18Mzq7UkCU/edit#gid=0">books</a>
-                with others. In the future, I aim to develop a blog to consolidate all
-                of these experiences.
+                I am an avid explorer who enjoys sharing wisdom.
+                Previously, I composed travel <a href="http://phusadventures.com/">blogs</a>
+                about different adventures and shared
+                teachings of multiple
+                <a href="https://docs.google.com/spreadsheets/d/1t0oJ6ci7sN1B4Kz9nXuxTgzGZ7ItdrDBR18Mzq7UkCU/edit#gid=0">books</a>
+                 with others. In the future, I aim to develop a website to consolidate these experiences.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="about-me-image">
-        <img src="pic/about-me.jpg" alt="Kevin Tran Picture">
-      </div>
     </span>
     <span id="portfolio">
       <div class="portfolio-intro">
         <h1>Portfolio</h1>
-        <video class="video-bg" playsinline autoplay muted loop>
-          <source src="video.mp4" type="video/mp4">
-        </video>
+        <img class="video-bg" src="coding.png" alt="Coding">
       </div>
       <div id="project-header">
       </div>
-      <h2>Top Projects</h2>
-      <div class="project-showcase">
-        <div class="column fade-in">
-          <!-- Image from the University of Washington page to use their logo -->
-          <img src="pic/uw-logo.png" alt="Hall Health logo">
-          <h3>Hall Health Mental Health Clinic</h3>
-          <p>
-            Hall Health is the University of Washington's clinical aid for providing healthcare
-            support. This was my first development project where I worked with both a
-            team and an organization. During this project, I was the main facilitator for the
-            project tasks and direction.
-          </p>
-          <p class="link-info">
-            <strong>Repository:</strong>
-            <a href="https://github.com/warandstar/math381hallhealth">
-              <i class="fas fa-code-branch"></i>
-            </a>
-            <strong> Final Proposal: </strong>
-            <a href="https://drive.google.com/open?id=1dXusDXDo6_l6Kpr9pTMdekr-tlyrh6nu">
-              <i class="fas fa-file"></i>
-            </a>
-          </p>
+      <h2>Projects</h2>
+      <ul class="tabs-portfolio">
+        <li data-tab-target-project="#top-projects" class="active tab">Favorite</li>
+        <li data-tab-target-project="#current-projects" class="tab">Current</li>
+      </ul>
+      <div id="top-projects" data-tab-project class="active">
+        <div class="project-showcase">
+          <div class="column fade-in">
+            <!-- Image from the University of Washington page to use their logo -->
+            <img src="pic/uw-logo.png" alt="Hall Health logo">
+            <h3>Hall Health Mental Health Clinic</h3>
+            <p class="description">
+              Hall Health is the University of Washington's clinical aid for providing healthcare
+              support. This was my first development project where I worked with both a
+              team and an organization. During this project, I was the main facilitator for the
+              project tasks and direction.
+            </p>
+            <p class="link-info">
+              <strong>Repository:</strong>
+              <a href="https://github.com/warandstar/math381hallhealth">
+                <i class="fas fa-code-branch"></i>
+              </a>
+              <strong> Final Proposal: </strong>
+              <a href="https://drive.google.com/open?id=1dXusDXDo6_l6Kpr9pTMdekr-tlyrh6nu">
+                <i class="fas fa-file"></i>
+              </a>
+            </p>
+          </div>
+          <div class="column fade-in">
+            <!-- Image from the University of Washington's DubsTech student organization group -->
+            <img src="pic/dubstech-logo-rm.png" alt="Dubstech logo">
+            <h3>DubsTech Datathon</h3>
+            <p class="description">
+              DubsTech is a student organization that educates other students about technology.
+              At their hackathon, I worked in a team of five to develop insights into Seattle
+              crime data. I analyzed the locations and times the crimes occurred.
+              DubsTech awarded our team first place for best data insight!
+            </p>
+            <p class="link-info">
+              <strong>Repository: </strong>
+              <a href="https://github.com/ktptran/data_hackathon_Feb15th">
+                <i class="fas fa-code-branch"></i>
+              </a>
+              <strong> Final Presentation:</strong>
+              <a href="https://drive.google.com/open?id=1kg0vuS_2AWjpKzvzE455RIeUiHYtoEhG">
+                <i class="fas fa-file-powerpoint"></i>
+              </a>
+            </p>
+          </div>
+          <div class="column fade-in">
+            <!-- Image from the University of Washington's Husky Union Building -->
+            <img src="pic/hub-games-rm.png" alt="HUB Games logo">
+            <h3>HUB Games Workshops</h3>
+            <p class="description">
+              HUB Games is an organization that provides a space for students to interact through
+              games. Since January 2020, I have collaborated with HUB Games to host coding workshops
+              focused on helping others improve their chances of winning competitive games.
+            </p>
+            <p class="link-info">
+              <strong>Workshop Content:</strong>
+              <a href="https://github.com/ktptran/pcm_functions/tree/master/python_workshops/discord_bots">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </a>
+            </p>
+          </div>
         </div>
-        <div class="column fade-in">
-          <!-- Image from the University of Washington's DubsTech student organization group -->
-          <img src="pic/dubstech-logo-rm.png" alt="Dubstech logo">
-          <h3>DubsTech Datathon</h3>
-          <p>
-            DubsTech is a student organization that educates other students about technology.
-            At their hackathon, I worked in a team of five to develop insights into Seattle
-            crime data. I analyzed the location of crime and the distribution of time the
-            crimes occurred. We were awarded first place for best data insight!
-          </p>
-          <p class="link-info">
-            <strong>Repository: </strong>
-            <a href="https://github.com/ktptran/data_hackathon_Feb15th">
-              <i class="fas fa-code-branch"></i>
-            </a>
-            <strong> Final Presentation:</strong>
-            <a href="https://drive.google.com/open?id=1kg0vuS_2AWjpKzvzE455RIeUiHYtoEhG">
-              <i class="fas fa-file-powerpoint"></i>
-            </a>
-          </p>
-        </div>
-        <div class="column fade-in">
-          <!-- Image from the University of Washington's Husky Union Building -->
-          <img src="pic/hub-games-rm.png" alt="HUB Games logo">
-          <h3>HUB Games Workshops</h3>
-          <p>
-            HUB Games is an organization that provides a space for students to interact through
-            games. Since January 2020, I have collaborated with HUB Games to host coding workshops
-            focused on helping others improve their chances of winning competitive games.
-          </p>
-          <p class="link-info">
-            <strong>Workshop Content:</strong>
-            <a href="https://github.com/ktptran/pcm_functions/tree/master/python_workshops/discord_bots">
-              <i class="fas fa-chalkboard-teacher"></i>
-            </a>
-          </p>
+      </div>
+      <div id="current-projects" data-tab-project>
+        <div class="project-showcase">
+          <div class="column fade-in">
+            <!--
+            Image from AppyThings where they have transparent images for use. This image is using
+            Amazon Web Service's logo.
+            -->
+            <img src="pic/aws-csa-rm.png" alt="aws-logo">
+            <h3>AWS Solutions Architect </h3>
+            <p class="description">
+              I am preparing for the AWS Solutions Architect Associates certification to
+              continue learning more about the cloud and explore its vast capabilities. This
+              certification focuses on building highly available architecture at an enterprise level
+              using multiple AWS resources.
+            </p>
+            <p class="link-info">
+              <strong>AWS Solutions Architect: </strong>
+              <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </a>
+            </p>
+          </div>
+          <div class="column fade-in">
+            <!-- Image from favpng for a web development logo -->
+            <img src="pic/web-dev-rm.png" alt="Web Development logo">
+            <h3>Dynamic Website Development</h3>
+            <p class="description">
+              I am working with a team of 10 to build a dynamic website for an organization.
+              Within this project, I am the technical lead who will guide the development process
+              similar to a scrum master. The estimated release is early August.
+            </p>
+            <p class="link-info">
+              <strong>Scrum Master Responsibilities: </strong>
+              <a href="https://www.visual-paradigm.com/scrum/what-is-scrum-master/">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </a>
+            </p>
+          </div>
+          <div class="column fade-in">
+            <!-- Image from the stick PNG website for a transparent logo of the Python symbol. -->
+            <img src="pic/python.png" alt="python-logo">
+            <h3>Teaching Python Course</h3>
+            <p class="description">
+              Following my discord workshops, I am now hosting a 7-week Python course with HUB Games.
+              This course focuses on learning Python basics, using the Pandas module,
+              and working with Riot Games' API.
+            </p>
+            <p class="link-info">
+              <strong>Course Material: </strong>
+              <a href="https://github.com/ktptran/pcm_functions/tree/master/python_workshops/intro_python">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
       <h2>Timeline</h2>
@@ -390,7 +451,7 @@
               <h3>DubsTech Datathon</h3>
               <p>
                 With four friends, I competed in a datathon where we investigated crime data within
-                Seattle, Washington. We were awarded first place for best data insight!
+                Seattle, Washington. DubsTech awarded our team first place for best data insight!
               </p>
               <p>
                 <strong>Repository:</strong>
@@ -437,7 +498,7 @@
               <h3>Medical Device Survey Research</h3>
               <p>
                 In October 2019, I began auditing errors in survey data to build insight on
-                medical device research for the University of ashington's
+                medical device research for the University of Washington's
                 <a href="https://foster.uw.edu/">business school</a>.
               </p>
               <p>
@@ -484,12 +545,13 @@
             <div class="content">
               <h3>Portfolio Website</h3>
               <p>
-                Over two weeks, I learned the basics of HTML, CSS, and JSON to produce this
+                Over two weeks, I learned the fundamentals of web development, the systems
+                development life cycle, and the steps to host a site on AWS to produce this
                 portfolio!
               </p>
               <p>
                 <strong>Repository:</strong>
-                <a href="https://github.com/ktptran/websites/tree/master/Main%20Website">
+                <a href="https://github.com/ktptran/websites/tree/master/Portfolio%20Website">
                   <i class="fas fa-code-branch"></i>
                 </a>
               </p>
@@ -503,61 +565,6 @@
           </li>
           <div style="clear: both;"></div>
         </ul>
-      </div>
-      <h2>Current Projects</h2>
-      <div class="project-showcase">
-        <div class="column fade-in">
-          <!--
-          Image from AppyThings where they have transparent images for use. This image is using
-          Amazon Web Service's logo.
-          -->
-          <img src="pic/aws-csa-rm.png" alt="aws-logo">
-          <h3>AWS Solutions Architect </h3>
-          <p>
-            I am preparing for the AWS Solutions Architect Associates certification to
-            continue learning more about the cloud and explore its vast capabilities. This
-            certification focuses on building highly available architecture at an enterprise level
-            using multiple AWS resources.
-          </p>
-          <p class="link-info">
-            <strong>AWS Solutions Architect: </strong>
-            <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">
-              <i class="fas fa-chalkboard-teacher"></i>
-            </a>
-          </p>
-        </div>
-        <div class="column fade-in">
-          <!-- Image from favpng for a web development logo -->
-          <img src="pic/web-dev-rm.png" alt="Web Development logo">
-          <h3>Dynamic Website Development</h3>
-          <p>
-            I am working with a team of 10 to build a dynamic website for an organization.
-            Within this project, I am the technical lead who will guide the development process
-            similar to a scrum master. The estimated release is early August.
-          </p>
-          <p class="link-info">
-            <strong>Scrum Master Responsibilities: </strong>
-            <a href="https://www.visual-paradigm.com/scrum/what-is-scrum-master/">
-              <i class="fas fa-chalkboard-teacher"></i>
-            </a>
-          </p>
-        </div>
-        <div class="column fade-in">
-          <!-- Image from the stick PNG website for a transparent logo of the Python symbol. -->
-          <img src="pic/python.png" alt="python-logo">
-          <h3>Teaching Python Course</h3>
-          <p>
-            Following my discord workshops, I am now hosting a 7-week Python course with HUB Games.
-            This course focuses on learning Python basics, using the Pandas module,
-            and working with Riot Games' API.
-          </p>
-          <p class="link-info">
-            <strong>Course Material: </strong>
-            <a href="https://github.com/ktptran/pcm_functions/tree/master/python_workshops/intro_python">
-              <i class="fas fa-chalkboard-teacher"></i>
-            </a>
-          </p>
-        </div>
       </div>
     </span>
   </main>
