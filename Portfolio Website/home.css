@@ -33,6 +33,10 @@ a {
   text-decoration: none;
 }
 
+strong {
+  color: black;
+}
+
 /* 2. Navigation bar */
 header {
   background: var(--background);
@@ -180,8 +184,8 @@ nav .menu {
 }
 
 #welcome #text img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 100%;
   margin-bottom: 2%;
 }
@@ -624,6 +628,10 @@ blockquote {
 #project-timeline .content a, #tab-content a {
   color: #037daf;
   text-decoration: none;
+}
+
+#project-timeline .content .extra a {
+  color: black;
 }
 
 #project-timeline .content i {
