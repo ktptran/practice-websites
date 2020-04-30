@@ -364,6 +364,33 @@ blockquote {
   background: white;
 }
 
+#about-me-text .tabs .tab {
+  cursor: pointer;
+  text-transform: uppercase;
+  flex: 1;
+  font-style:italic;
+  font-size: calc(10px + 0.5vw);
+  text-align: center;
+  padding: 7.5px;
+  padding: 1px solid black;
+}
+
+#about-me-text .tabs .tab:nth-child(even) {
+  border-left: 0.1px solid black;
+  border-right: 0.1px solid black;
+}
+
+#about-me-text .tabs .tab:hover {
+  background-color: #AAA;
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.9), 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+  transition: all .4s;
+}
+
+#about-me-text .tab.active {
+  background-color: #BBB;
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.9), 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
 .tabs-portfolio {
   display: flex;
   justify-content: center;
@@ -400,33 +427,6 @@ blockquote {
 #portfolio .active[data-tab-project] {
   display: block;
   min-height: 20%;
-}
-
-#about-me-text .tabs .tab {
-  cursor: pointer;
-  text-transform: uppercase;
-  flex: 1;
-  font-style:italic;
-  font-size: calc(10px + 0.5vw);
-  text-align: center;
-  padding: 7.5px;
-  padding: 1px solid black;
-}
-
-#about-me-text .tabs .tab:nth-child(even) {
-  border-left: 0.1px solid black;
-  border-right: 0.1px solid black;
-}
-
-#about-me-text .tabs .tab:hover {
-  background-color: #AAA;
-  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.9), 0 10px 20px 0 rgba(0, 0, 0, 0.4);
-  transition: all .4s;
-}
-
-#about-me-text .tab.active {
-  background-color: #BBB;
-  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.9), 0 10px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 /* 5. Project Introduction */
